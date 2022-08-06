@@ -8,10 +8,7 @@ function criaHoraDosSegundos(segundos) {
 
 ///ligações com tags HTML
 const relogio = document.querySelector('.relogio');
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const zerar = document.querySelector('.zerar');
-const zeros = document.querySelector('.zero');
+
 let segundos = 0;
 let timer;
 
@@ -22,19 +19,24 @@ function iniciarRelogio() {
    }, 1000);
 }
 
-iniciar.addEventListener('click', function (e) {
-   relogio.classList.add('circle');
-   clearInterval(timer);
-   iniciarRelogio();
-});
+document.addEventListener('click', function (e) {
+   const elemento = e.target;
 
-pausar.addEventListener('click', function (e) {
-   clearInterval(timer);
-});
+   if (elemento.classList.contains('iniciar')) {
+      relogio.classList.remove('pausado');
+      clearInterval(timer);
+      iniciarRelogio();
+   }
 
-zerar.addEventListener('click', function (e) {
-   clearInterval(timer);
-   relogio.classList.add('circle');
-   relogio.innerText = '00:00:00';
-   segundos = 0;
+   if (elemento.classList.contains('pausar')) {
+      relogio.classList.add('pausado');
+      clearInterval(timer);
+   }
+
+   if (elemento.classList.contains('zerar')) {
+      clearInterval(timer);
+      relogio.innerText = '00:00:00';
+      relogio.classList.remove('pausado');
+      segundos = 0;
+   }
 });

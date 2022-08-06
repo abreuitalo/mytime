@@ -105,5 +105,6 @@ a:visited {
   text-align: center;
 }
 
-
-
+.pausado {
+  color: var(--verde);
+}
