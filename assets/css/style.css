@@ -2,14 +2,18 @@
   --verde: #B4F963;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 .section-mae {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,8 +23,6 @@
 }
 
 .section {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +73,16 @@ button:hover{
   border-radius: 90px;
 }
 
-ul {
+nav {
   display: flex;
+  justify-content: center;
+}
+
+ul {
+  position: fixed;
+  background: #111111;
+  display: flex;
+  justify-content: center;
   list-style-type: none;
 }
 
