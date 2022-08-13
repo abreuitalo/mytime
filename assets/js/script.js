@@ -7,7 +7,7 @@ function criaHoraDosSegundos(segundos) {
 }
 
 ///ligações com tags HTML
-const relogio = document.querySelector('.relogio');
+const relogio = document.querySelector('.relogioTimer');
 
 let segundos = 0;
 let timer;

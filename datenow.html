@@ -8,21 +8,36 @@
    </head>
 
    <body>
-      <section class="section-mae">
+      <section class="section-mae" id="datenow">
          <nav>
             <ul>
-               <li><a href="/site02/datenow.html">date now</a></li>
-               <li><a href="/site02/index.html">timer</a></li>
+               <li><a href="#datenow">date now</a></li>
+               <li><a href="#timer">timer</a></li>
                <li><a href="/site02/toDo.html">to-do</a></li>
             </ul>
          </nav>
 
          <section class="section">
             <div class="container">
-               <p class="relogio circle">&#128344</p>
+               <p class="relogioDate circle">&#128344</p>
             </div>
          </section>
       </section>
+
+      <section id="timer">
+         <section class="section">
+            <div class="container">
+               <h1>Just in Time</h1>
+               <p class="relogioTimer circle">00:00:00</p>
+   
+               <div class="box-btn">
+                  <button class="iniciar">&#10148</button>
+                  <button class="pausar">&#10073;&#10073;</button>
+                  <button class="zerar">&#9747;</button>
+               </div>
+            </div>
+      </section>
+
       <script src="./assets/js/datenow.js"></script>
    </body>
 </html>
