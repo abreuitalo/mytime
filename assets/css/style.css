@@ -23,6 +23,7 @@ html {
 }
 
 .section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +31,7 @@ html {
 }
 
 .container {
-  width: 50%;
+  /* width: 50%; */
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -117,4 +118,10 @@ a:visited {
 
 .pausado {
   color: var(--verde);
+}
+
+@media (max-width: 500px) {
+  .texto {
+
+  }
 }
