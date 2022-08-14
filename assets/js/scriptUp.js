@@ -25,7 +25,8 @@ function relogioDate() {
 
 relogioDate();
 
-//
+// timer
+// timer
 
 function relogioTimer() {
    function criaHoraDosSegundos(segundos) {
