@@ -1,8 +1,6 @@
 # My Time
 
-- simple personal project that can help you in your time !
-- simples projeto pessoal que possa te ajudar em seu tempo !
-
+- Um simples projeto pessoal para que possa te ajudar a cronometrar seu tempo !
 
 
 Link da aplicação: https://mytime-00.netlify.app/#datenow
