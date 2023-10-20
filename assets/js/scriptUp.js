@@ -33,7 +33,8 @@ function relogioTimer() {
       const data = new Date(segundos * 1000);
 
       return data.toLocaleTimeString('pt-BR', {
-         timeZone: 'GMT'
+         timeZone: 'GMT',
+         timeStyle: 'long'
       }); //retorno a data 00:00:01
    }
 
