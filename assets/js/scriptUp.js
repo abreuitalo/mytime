@@ -8,9 +8,7 @@ function relogioDate() {
    function criaP() {
       const p = document.createElement('p');
       const data = new Date();
-      p.innerHTML = data.toLocaleDateString('pt-BR', {
-         dateStyle: 'long';
-      });
+      p.innerHTML = data.toDateString('pt-BR',);
       p.classList.add('p2');
       return p;
    }
