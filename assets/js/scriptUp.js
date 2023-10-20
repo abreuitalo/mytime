@@ -34,7 +34,7 @@ function relogioTimer() {
 
       return data.toLocaleTimeString('pt-BR', {
          timeZone: 'GMT',
-         timeStyle: 'long'
+         dateStyle: 'short'
       }); //retorno a data 00:00:01
    }
 
