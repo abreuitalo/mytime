@@ -1,7 +1,9 @@
 function relogioDate() {
    function criaHora() {
       let data = new Date();
-      const msg = `${data.toLocaleTimeString('pt-BR')}`;
+      const msg = `${data.toLocaleTimeString('pt-BR', {
+         dateStyle: "short"
+      })}`;
       relogio.innerHTML = msg;
    }
 
