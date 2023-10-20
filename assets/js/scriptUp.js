@@ -1,8 +1,8 @@
 function relogioDate() {
    function criaHora() {
       let data = new Date();
-      const msg = `${data.toLocaleTimeString('pt-BR', {
-         dateStyle: "short"
+      const msg = `${data.toLocaleDateString('pt-br', {
+         dateStyle: "long"
       })}`;
       relogio.innerHTML = msg;
    }
@@ -34,9 +34,8 @@ function relogioTimer() {
    function criaHoraDosSegundos(segundos) {
       const data = new Date(segundos * 1000);
 
-      return data.toLocaleTimeString('pt-BR', {
+      return data.toLocaleTimeString('pt-br', {
          timeZone: 'GMT',
-         dateStyle: 'short'
       }); //retorno a data 00:00:01
    }
 
