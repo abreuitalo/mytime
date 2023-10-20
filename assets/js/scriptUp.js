@@ -1,16 +1,16 @@
 function relogioDate() {
    function criaHora() {
       let data = new Date();
-      const msg = `${data.toLocaleDateString('pt-br', {
-         dateStyle: "long"
-      })}`;
+      const msg = `${data.toLocaleTimeString('pt-br')}`;
       relogio.innerHTML = msg;
    }
 
    function criaP() {
       const p = document.createElement('p');
       const data = new Date();
-      p.innerHTML = data.toDateString('pt-BR');
+      p.innerHTML = data.toLocaleDateString('pt-BR', {
+         dateStyle: 'long';
+      });
       p.classList.add('p2');
       return p;
    }
