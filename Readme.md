@@ -24,6 +24,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O MyTime é um Timer online que apresenta em tempo real a data e hora, além de disponibilizar de um counter.
 
-Acesse através do lik: https://abreuitalo.github.io/MyTime/
+Acesse através do lik: https://abreuitalo.github.io/mytime/
 
 ---
