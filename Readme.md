@@ -5,11 +5,10 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-
 <br>
 
 <p align="center">
-  <img alt="my time" src="./assets/capa.jpg" width="100%">
+  <img alt="my time" src="./assets/capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
