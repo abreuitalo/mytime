@@ -34,7 +34,9 @@ function relogioTimer() {
   function criaHoraDosSegundos(segundos) {
     const data = new Date(segundos * 1000);
 
-    return data.toLocaleTimeString("pt-br", {}); //retorno a data 00:00:01
+    return data.toLocaleTimeString("pt-br", {
+      timeZone: "GMT",
+    }); //retorno a data 00:00:01
   }
 
   ///ligações com tags HTML
