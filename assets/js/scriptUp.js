@@ -9,7 +9,6 @@ function relogioDate() {
     const p = document.createElement("p");
     const data = new Date();
     p.innerText = data.toLocaleDateString("pt-br", {
-      timeZone: "UTC",
       dateStyle: "long",
     });
     p.classList.add("p2");
